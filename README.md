@@ -1,2 +1,2 @@
 # netcore
-For studying .Net Core
+This repository was created for studying .Net Core basics
