@@ -1,0 +1,6 @@
+C:\Users\Anatolii\Desktop\NetCore\obj\Debug\netcoreapp2.1\NetCore.csprojAssemblyReference.cache
+C:\Users\Anatolii\Desktop\NetCore\obj\Debug\netcoreapp2.1\NetCore.csproj.CoreCompileInputs.cache
+C:\Users\Anatolii\Desktop\NetCore\obj\Debug\netcoreapp2.1\NetCore.RazorAssemblyInfo.cache
+C:\Users\Anatolii\Desktop\NetCore\obj\Debug\netcoreapp2.1\NetCore.RazorAssemblyInfo.cs
+C:\Users\Anatolii\Desktop\NetCore\obj\Debug\netcoreapp2.1\NetCore.AssemblyInfoInputs.cache
+C:\Users\Anatolii\Desktop\NetCore\obj\Debug\netcoreapp2.1\NetCore.AssemblyInfo.cs
