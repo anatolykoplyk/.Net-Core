@@ -189,3 +189,4 @@ D:\Learn\NetCoreRepo\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.Views.pdb
 D:\Learn\NetCoreRepo\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.csproj.CopyComplete
 D:\Learn\NetCoreRepo\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.dll
 D:\Learn\NetCoreRepo\OdeToFood\obj\Debug\netcoreapp2.1\OdeToFood.pdb
+D:\Learn\NetCoreRepo\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\Delete.g.cshtml.cs
