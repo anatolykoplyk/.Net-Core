@@ -1,7 +1,7 @@
 ﻿@page
 @model ListModel
 
-<h1>Anatolii`s Restaurants:</h1>
+<h1>Restaurants:</h1>
 
 <form method="get">
     <div class="form-group">
@@ -33,10 +33,16 @@
             <td>@restaurant.Location</td>
             <td>@restaurant.Cuisine</td>
             <td>
-                <a class="btn btn-lg" @*href="/Restaurants/Detail/?restaurantId=@restaurant.Id" - old style*@
+                <a class="btn btn-lg"
                    asp-page="./Detail"
                    asp-route-restaurantId="@restaurant.Id">
                     <i class="glyphicon glyphicon-zoom-in"></i>
+                </a>
+
+                <a class="btn btn-lg"
+                   asp-page="./Edit"
+                   asp-route-restaurantId="@restaurant.Id">
+                    <i class="glyphicon glyphicon-edit"></i>
                 </a>
             </td>
         </tr>

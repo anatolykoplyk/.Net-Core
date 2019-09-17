@@ -8,15 +8,17 @@ namespace OdeToFood.Data
     {
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
         Restaurant GetById(int id);
+        Restaurant Update(Restaurant updatedRestaurant);
+        int Commit();
     }
 
     public class InMemoryRestaurantData : IRestaurantData
     {
-        List<Restaurant> restaurants;
+        readonly List<Restaurant> _restaurants;
 
         public InMemoryRestaurantData()
         {
-            restaurants = new List<Restaurant>()
+            _restaurants = new List<Restaurant>()
             {
                 new Restaurant { Id = 1, Name = "Anatolii`s Pizza", Location = "Kharkov", Cuisine = CuisineType.Italian },
                 new Restaurant { Id = 2, Name = "Crishna", Location = "Odessa", Cuisine = CuisineType.Indian },
@@ -26,14 +28,32 @@ namespace OdeToFood.Data
 
         public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
         {
-            return restaurants
+            return _restaurants
                 .Where(r => string.IsNullOrEmpty(name) || r.Name.StartsWith(name))
                 .OrderBy(r => r.Name);
         }
 
         public Restaurant GetById(int id)
         {
-            return restaurants.SingleOrDefault(r => r.Id == id);
+            return _restaurants.SingleOrDefault(r => r.Id == id);
+        }
+
+        public Restaurant Update(Restaurant updatedRestaurant)
+        {
+            var resto = _restaurants.SingleOrDefault(r => r.Id == updatedRestaurant.Id);
+            if (resto != null)
+            {
+                resto.Name = updatedRestaurant.Name;
+                resto.Location = updatedRestaurant.Location;
+                resto.Cuisine = updatedRestaurant.Cuisine;
+            }
+
+            return resto;
+        }
+        
+        public int Commit()
+        {
+            return 0;
         }
     }
 }
