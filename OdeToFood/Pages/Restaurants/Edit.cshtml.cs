@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -24,10 +22,18 @@ namespace OdeToFood.Pages.Restaurants
             _htmlHelper = htmlHelper;
         }
 
-        public IActionResult OnGet(int restaurantId)
+        public IActionResult OnGet(int? restaurantId)
         {
             Cuisines = _htmlHelper.GetEnumSelectList<CuisineType>();
-            Restaurant = _restaurantData.GetById(restaurantId);
+            if (restaurantId.HasValue)
+            {
+                Restaurant = _restaurantData.GetById(restaurantId.Value);
+            }
+            else
+            {
+                Restaurant = new Restaurant();
+            }
+
             if (Restaurant == null)
             {
                 return RedirectToPage("./NotFound");
@@ -38,15 +44,22 @@ namespace OdeToFood.Pages.Restaurants
 
         public IActionResult OnPost()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+            {
+                Cuisines = _htmlHelper.GetEnumSelectList<CuisineType>();
+                return Page();
+            }
+
+            if (Restaurant.Id > 0)
             {
                 _restaurantData.Update(Restaurant);
-                _restaurantData.Commit();
-                return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
             }
-            Cuisines = _htmlHelper.GetEnumSelectList<CuisineType>();
-
-            return Page();
+            else
+            {
+                _restaurantData.Add(Restaurant);
+            }
+            _restaurantData.Commit();
+            return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
         }
     }
 }

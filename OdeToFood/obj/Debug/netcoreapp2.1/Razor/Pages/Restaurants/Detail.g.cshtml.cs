@@ -100,7 +100,7 @@ Write(Model.Restaurant.Name);
             WriteLiteral("\r\n</div>\r\n\r\n");
             EndContext();
             BeginContext(320, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5905f6a15c21418585581d96137adcec", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a0a2cdbe81b49c78fdc79c2df4a4ea5", async() => {
                 BeginContext(365, 15, true);
                 WriteLiteral("All Restaurants");
                 EndContext();
