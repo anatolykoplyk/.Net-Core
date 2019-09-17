@@ -1,5 +1,5 @@
-﻿using OdeToFood.Core;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using OdeToFood.Core;
 
 namespace OdeToFood.Data
 {
