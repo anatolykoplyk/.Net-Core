@@ -59,6 +59,8 @@ D:\Learn\NetCoreRepo\NetCore\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\Od
 D:\Learn\NetCoreRepo\NetCore\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.dll
 D:\Learn\NetCoreRepo\NetCore\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.pdb
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.deps.json
+D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.json
+D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.dev.json
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.dll
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.pdb
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Core.dll
@@ -70,5 +72,3 @@ D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.csproj.CopyComplete
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.dll
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.pdb
-D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.json
-D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.dev.json
