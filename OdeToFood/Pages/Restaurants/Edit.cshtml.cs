@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -37,8 +38,14 @@ namespace OdeToFood.Pages.Restaurants
 
         public IActionResult OnPost()
         {
-            Restaurant = _restaurantData.Update(Restaurant);
-            _restaurantData.Commit();
+            if (ModelState.IsValid)
+            {
+                _restaurantData.Update(Restaurant);
+                _restaurantData.Commit();
+                return RedirectToPage("./Detail", new { restaurantId = Restaurant.Id });
+            }
+            Cuisines = _htmlHelper.GetEnumSelectList<CuisineType>();
+
             return Page();
         }
     }
