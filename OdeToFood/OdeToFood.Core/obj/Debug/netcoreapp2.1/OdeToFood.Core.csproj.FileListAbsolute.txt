@@ -31,3 +31,4 @@ D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.AssemblyInfo.cs
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.dll
 D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.pdb
+D:\Learn\NetCoreRepo\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.csprojAssemblyReference.cache
