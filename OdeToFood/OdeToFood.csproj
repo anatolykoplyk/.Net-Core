@@ -4,6 +4,14 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="ComputeFilesToPublish">
+    <Exec Command="npm install" />
+  </Target>
+
+  <ItemGroup>
+    <Content Include="node_modules/**" CopyToPublishDirectory="PreserveNewest"/>
+  </ItemGroup>
+
   <ItemGroup>
     <Compile Remove="OdeToFood.Core\**" />
     <Compile Remove="OdeToFood.Data\**" />
