@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using OdeToFood.Data;
 
 namespace OdeToFood
 {
@@ -7,7 +10,20 @@ namespace OdeToFood
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var host = CreateWebHostBuilder(args).Build();
+
+            MigrateDatabase(host);
+                
+            host.Run();
+        }
+
+        private static void MigrateDatabase(IWebHost host)
+        {
+            using (var scope = host.Services.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<OdeToFoodDbContext>();
+                db.Database.Migrate();
+            }
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
